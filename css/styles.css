@@ -1,0 +1,906 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@charset "UTF-8";
+* {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0px;
+  min-height: 100%;
+}
+/*FONTS*/
+  .nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+  .poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  .poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .poppins-black {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+
+  .poppins-thin-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  .poppins-extralight-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+
+  .poppins-light-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+
+  .poppins-regular-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  .poppins-medium-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  .poppins-semibold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  .poppins-bold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .poppins-extrabold-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  .poppins-black-italic {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @media (max-width: 875px) {
+    .version .section-3 {
+      background-position: center center;
+    }
+  }
+  @media (max-width: 600px) {
+    .version .section-3 {
+      background-position: 45% center;
+    }
+  }
+
+.version {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--fondo);
+}
+.version .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 50px;
+  padding: 0 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #EDE9F280;
+
+}
+
+.version .logo {
+  width: 104px;
+  height: auto;
+  display: block;
+}
+
+.version .buttons-group {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.version .menu-item {
+  color: #111111;
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.version .section {
+  width: 100%;
+  min-height: 660px;
+  padding: 0 24px 0;
+  display: flex;
+  align-items: center;
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*HERO*/
+  .version .hero-content {
+    max-width: 660px;
+  }
+
+  .version .hero-content h1 {
+    margin: 0;
+    color: #111111;
+    font-family: "poppins", Helvetica, sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .version .hero-content p {
+    margin: 0 0 28px;
+    color: #FD1850;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+
+  .version .menu-item:hover{
+          color: #FD1850;
+  }
+
+  .version .hero-button {
+    width: fit-content;
+    padding: 16px 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    color: #ffffff;
+    background-color: #FD1850;
+    border-radius: 4px;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .version .hero-button span {
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  .version .hero-button:hover{
+    border: 2px solid #FD1850;
+          background: #fff;
+          color: #4f4f4f;
+        }
+
+/*GALERIA*/
+  .version .galeria {
+    width: 100%;
+    background-color: #f5f3f6;
+    overflow: hidden;
+    padding: 16px 16px 48px;
+  }
+
+  .version .galeria-header{
+    color: #211F1F;
+    margin-left: 24px;
+    padding: 16px 0 48px;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+    padding: 48px 64px 34px;
+  }
+
+  .version .galeria-carrusel {
+    position: relative;
+    width: 100%;
+    font-family: "Nunito", Helvetica, sans-serif;
+  }
+
+  .version .galeria-track {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 0 14px;
+    scrollbar-width: none;
+  }
+
+  .version .galeria-track::-webkit-scrollbar {
+    display: none;
+  }
+
+  .version .galeria-card {
+    flex: 0 0 520px;
+    width: 520px;
+    height: 480px;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    scroll-snap-align: start;
+  }
+
+  .version .galeria-card img {
+    width: 100%;
+    height: 400px;
+    display: block;
+    object-fit: cover;
+  }
+
+  .version .galeria-card-texto {
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    text-align: center;
+  }
+
+  .version .galeria-card-texto h3 {
+    margin: 0 0 4px;
+    color: #ff1458;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 800;
+  }
+
+  .version .galeria-card-texto p {
+    margin: 0;
+    color: #ffffff;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .version .galeria-flecha {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #ff1458;
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 1;
+    cursor: pointer;
+    transform: translateY(-50%);
+  }
+
+  .version .galeria-flecha-izq {
+    left: -5px;
+    justify-content: center;
+
+  }
+
+  .version .galeria-flecha-der {
+    right: -5px;
+    justify-content: center;
+  }
+
+/*ICONOS*/
+  .version .iconos-bici {
+    width: 100%;
+    padding: 16px 0 48px;
+    margin: 24px;
+    background-color: #F5F3F6;
+  }
+
+  .version .iconos-bici h2 {
+    color: #111111;
+    font-family: "poppins", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  .version .iconos-contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+  }
+
+  .version .iconos-item {
+    width: 350px;
+    height: 304px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 24px;
+    background-color: #EBEBEB;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.22);
+  }
+
+  .version .iconos-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
+
+  .version .iconos-item p {
+    margin: 0;
+    color: #211F1F;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+  }
+
+/*COMO SE USA*/
+  .version .plegado {
+    width: 100%;
+    padding: 16px 24px 48px;
+    background-color: #F5F3F6;
+    text-align: center;
+  }
+
+  .version .plegado-header {
+    margin-bottom: 48px;
+  }
+
+  .version .plegado-header h2 {
+    margin: 0;
+    padding: 16px 24px;
+    text-align: left;
+    color: #211F1F;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.05;
+  }
+
+  .version .plegado {
+  width: 100%;
+  padding: 32px 24px;
+  background-color: #F2F0F3;
+}
+
+.version .plegado-carrusel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.version .plegado-card {
+  position: relative;
+  min-width: 0;
+  background-color: #F5F3F6;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+}
+
+.version .plegado-img {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.version .plegado-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.version .plegado-img span {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 2;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #FD1850;
+  border-radius: 50%;
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.version .plegado-card p {
+  min-height: 36px;
+  margin: 0;
+  padding: 12px 10px;
+  color: #211F1F;
+  font-family: "Nunito", Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: center;
+}
+
+/*TECH*/
+  .version .tech {
+    width: 100%;
+    padding: 16px 24px 48px;
+    background-color: #191818;
+  }
+
+  .version .tech-header {
+    margin-bottom: 48px;
+  }
+
+  .version .tech-header h2 {
+    color: #EDE9F2;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  .version .tech-lista {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .version .tech-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    scroll-snap-align: start;
+  }
+
+  .version .tech-card img {
+    width: 100%;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.25);
+    scroll-snap-align: start;
+  }
+
+  .version .tech-card-texto {
+  width: 100%;
+  min-height: 122px;
+  padding-top: 20px;
+  text-align: center;
+  }
+
+  .version .tech-card-texto h3 {
+    margin: 0 0 5px;
+    color: #FD1850;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 1.15;
+  }
+
+  .version .tech-card-texto p {
+    margin: 0 0 10px;
+    color: #211F1F;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.45;
+  }
+
+  .version .tech-card img {
+    height: 220px;
+  }
+
+  .version .tech-card-texto {
+    min-height: auto;
+  }
+
+/*DESCRIPCION PRINCIPAL*/
+  .version .descrip-bici {
+  width: 100%;
+  height: 540px;
+  padding: 56px 72px;
+  background-color: #191818;
+  }
+
+  .version .descrip-bici-contenido {
+    width: 100%;
+    max-width: 1440px;
+    margin: auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .version .descrip-bici-texto {
+    max-width: 540px;
+  }
+
+  .version .descrip-bici-texto h2 {
+    margin: 0 0 24px;
+    color: #EDE9F2;
+    font-family: "Poppins", Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .version .descrip-bici-texto p {
+    margin: 0;
+    color: #EDE9F2;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.65;
+  }
+
+  .version .descrip-bici-imagen {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+  }
+
+  .version .descrip-bici-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+/*DESCANSO IMAGEN*/
+  .version .descanso {
+  position: relative;
+  width: 100%;
+  height: 660px;
+  overflow: hidden;
+  }
+
+  .version .descanso h2 {
+  margin: 0;
+  color: #242424;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  }
+
+  .version .descanso-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  }
+
+  .version .descanso-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 24px;
+    background-color: rgba(235, 235, 235, 0.80);
+  }
+ 
+/*FOOTER*/
+  .version .footer {
+    width: 100%;
+    height: 300px;
+    padding: 64px 72px 72px;
+    background-color: #F5F3F6;
+  }
+
+  .version .footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 160px;
+    max-width: 1120px;
+    margin: 0 auto 32px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #211f1f;
+  }
+
+  .version .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .version .footer-col h3 {
+    margin: 0 0 4px;
+    color: #211f1f;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .version .footer-col span {
+    margin-right: 8px;
+  }
+
+  .version .footer-col a {
+    color: #211f1f;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+  }
+
+  .version .footer-bottom {
+    max-width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .version .footer-bottom p {
+    margin: 0;
+    color: #211F1F;
+    font-family: "Nunito", Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .version .footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .version .footer-redes img {
+    width: 18px;
+    height: 18px;
+    display: block;
+  }
+
+/*RESPONSIVE*/
+
+  @media (max-width: 480px) {
+    .version .hero-content h1 {
+      font-size: 32px;
+    }
+
+    .version .hero-content p {
+      font-size: 18px;
+    }
+
+    .version .hero-button {
+      padding: 14px 18px;
+      font-size: 15px;
+    }
+
+   .version .header {
+      padding: 14px 18px;
+    }
+
+    .version .logo {
+      width: 88px;
+    }
+
+    .version .buttons-group {
+      gap: 12px 16px;
+    }
+
+    .version .menu-item {
+      font-size: 14px;
+    }
+    .version .section {
+      min-height: 560px;
+      padding: 120px 24px 48px;
+      align-items: flex-start;
+    }
+
+    .version .hero-content {
+      max-width: 100%;
+      margin-top: 0;
+    }
+
+    .version .hero-content h1 {
+      font-size: 40px;
+    }
+
+    .version .hero-content p {
+      font-size: 20px;
+    }
+
+    .version .header {
+      height: auto;
+      padding: 16px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .version .buttons-group {
+      width: 100%;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .version .menu-item {
+      font-size: 15px;
+    }
+
+    .version .tech-lista {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+
+     .version .tech-card img {
+      height: 220px;
+    }
+
+    .version .tech-card-texto {
+      min-height: auto;
+    }
+
+    .version .plegado-carrusel {
+    grid-template-columns: 1fr;
+  }
+
+  .version .plegado-img {
+    height: 320px;
+  }
+
+    .version .footer {
+    width: 100%;
+    height: 100%;
+    padding: 64px 72px 72px;
+    background-color: #f5f3f6;
+    }
+
+    .version .footer-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 160px;
+      max-width: 1120px;
+      margin: 0 auto 32px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid #211f1f;
+    }
+
+    .version .footer-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .version .footer-col h3 {
+      margin: 0 0 4px;
+      color: #211f1f;
+      font-family: "Nunito", Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .version .footer-col span {
+      margin-right: 8px;
+    }
+
+    .version .footer-col a {
+      color: #211f1f;
+      font-family: "Nunito", Helvetica, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .version .footer-bottom {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .version .footer-bottom p {
+      margin: 0;
+      color: #211f1f;
+      font-family: "Nunito", Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    .version .footer-redes {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .version .footer-redes img {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+  .version .descanso {
+    height: 220px;
+  }
+
+  .version .descanso-overlay h2 {
+    font-size: 16px;
+  }
+  }
